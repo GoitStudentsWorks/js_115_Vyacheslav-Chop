@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/js_115_Vyacheslav-Chop/favicon.svg" />
+    <meta
+      name="description"
+      content="This is a resume, builder website implemented using Vite, Axios, iziToast, Accordion and Swiper API. "
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project-Persistent-Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js" defer></script>
+    <script type="module" crossorigin src="/js_115_Vyacheslav-Chop/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_115_Vyacheslav-Chop/assets/vendor-QlvUMHiJ.js">
+    <link rel="stylesheet" crossorigin href="/js_115_Vyacheslav-Chop/assets/vendor-D5re0FY6.css">
+    <link rel="stylesheet" crossorigin href="/js_115_Vyacheslav-Chop/assets/index-CfZScBPQ.css">
+  </head>
+  <body class="theme-light">
+    <div id="tsparticles"></div>
+
+    <header class="header-section">
+  <div class="container header-container">
+    <div class="header-top-wrapper">
+      <a class="site-logo" href="./index.html">
+        <p class="text-logo">
+          Lloyd<span class="text-accent">Jefferson.</span>
+        </p>
+      </a>
+      <button class="toggle-theme-btn" aria-label="Switch theme">
+        <span class="toggle-theme-btn-circle"></span>
+      </button>
+    </div>
+
+    <div class="header-nav-wrapper">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="#about-me">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work-together">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="order-link" href="#work-together">Order the project</a>
+      <button class="burger-menu-btn" aria-label="Open menu" type="button">
+        <svg class="burger-menu-btn-icon" width="32" height="32">
+          <use href="/js_115_Vyacheslav-Chop/assets/icons-DnNAGzdN.svg#burger"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="menu is-close">
+  <div class="menu-wrapper">
+    <div class="menu-header-content">
+      <a class="site-logo" href="./index.html">
+        <p class="text-logo">
+          Lloyd<span class="text-accent">Jefferson.</span>
+        </p>
+      </a>
+      <button class="toggle-theme-btn" aria-label="Switch theme">
+        <span class="toggle-theme-btn-circle"></span>
+      </button>
+      <button
+        class="menu-close-btn"
+        type="button"
+        aria-label="Close menu"
+        tabindex="0"
+      >
+        <svg class="menu-close-btn-icon" width="32" height="32">
+          <use href="/js_115_Vyacheslav-Chop/assets/icons-DnNAGzdN.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="theme-switcher">
+      <button
+        class="text-theme-btn text-theme-btn-defolt"
+        data-theme="default"
+        aria-label="Set default theme"
+      >
+        D
+      </button>
+      <button
+        class="text-theme-btn text-theme-btn-blue"
+        data-theme="blue"
+        aria-label="Set blue theme"
+      >
+        B
+      </button>
+      <button
+        class="text-theme-btn text-theme-btn-red"
+        data-theme="red"
+        aria-label="Set red theme"
+      >
+        R
+      </button>
+      <button
+        class="text-theme-btn text-theme-btn-purple"
+        data-theme="purple"
+        aria-label="Set purple theme"
+      >
+        P
+      </button>
+    </div>
+    <nav class="menu-nav">
+      <ul class="menu-nav-list">
+        <li class="menu-nav-item">
+          <a class="menu-nav-link" href="#about-me">About me</a>
+        </li>
+        <li class="menu-nav-item">
+          <a class="menu-nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="menu-nav-item">
+          <a class="menu-nav-link" href="#work-together">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="menu-order-link" href="#work-together" data-link-order=""
+      >Order the project</a
+    >
+  </div>
+  <ul class="social-list menu-social-list">
+    <li class="social-item">
+      <a
+        class="social-link"
+        href="https://www.instagram.com/goitclub/"
+        target="_blank"
+        >Instagram</a
+      >
+    </li>
+    <li class="social-item">
+      <a
+        class="social-link"
+        href="https://www.facebook.com/goITclub/"
+        target="_blank"
+        >Facebook</a
+      >
+    </li>
+    <li class="social-item">
+      <a
+        class="social-link"
+        href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+        target="_blank"
+        >Linkedin</a
+      >
+    </li>
+    <li class="social-item">
+      <a
+        class="social-link"
+        href="https://github.com/Vyacheslav-Chop/project-persistent-portfolio"
+        target="_blank"
+        >GitHub</a
+      >
+    </li>
+  </ul>
+</div>
+
+  </div>
+  <div class="theme-switcher container">
+    <button
+      class="text-theme-btn text-theme-btn-defolt"
+      data-theme="default"
+      aria-label="Set default theme"
+    >
+      D
+    </button>
+    <button
+      class="text-theme-btn text-theme-btn-blue"
+      data-theme="blue"
+      aria-label="Set blue theme"
+    >
+      B
+    </button>
+    <button
+      class="text-theme-btn text-theme-btn-red"
+      data-theme="red"
+      aria-label="Set red theme"
+    >
+      R
+    </button>
+    <button
+      class="text-theme-btn text-theme-btn-purple"
+      data-theme="purple"
+      aria-label="Set purple theme"
+    >
+      P
+    </button>
+  </div>
+</header>
+
+
+    <main>
+      <section class="section section-hero">
+  <div class="container">
+    <div class="hero-top-box">
+      <h1 class="main-title">
+        Hello, I am
+
+        <picture class="hero-title-img">
+          <source
+            media="(min-width: 1280px)"
+            srcset="data:image/avif;base64,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 1x, data:image/avif;base64,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 2x"
+          />
+
+          <img
+            class="hero-img"
+            src="data:image/avif;base64,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"
+            alt="Lloyd Jefferson"
+            width="108"
+            height="108"
+          />
+        </picture>
+
+        <span class="text-accent">Fullstack developer</span>
+      </h1>
+
+      <div class="hero-descript">
+        <a class="hero-btn" href="#work-together">
+          <div class="hero-btn-content">
+            <svg class="hero-icon-arrow" width="28" height="16">
+              <use href="/js_115_Vyacheslav-Chop/assets/icons-DnNAGzdN.svg#icon-hero-arrow"></use>
+            </svg>
+            <span class="hero-btn-text">Order the <span class="hero-btn-text-accent">project</span></span>
+          </div>
+
+          <span class="hero-btn-bg"></span>
+        </a>
+
+        <p class="hero-text">
+          I work with people all over the world to create
+          <span class="text-accent">impressive</span> and
+          <span class="text-accent">functional websites</span> that reflect each
+          client&rsquo;s unique personality.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="social-list-box">
+    <ul class="social-list hero-social-list container">
+      <li class="social-item">
+        <a
+          class="social-link"
+          href="https://www.instagram.com/goitclub/"
+          target="_blank"
+          >Instagram</a
+        >
+      </li>
+      <li class="social-item">
+        <a
+          class="social-link"
+          href="https://www.facebook.com/goITclub/"
+          target="_blank"
+          >Facebook</a
+        >
+      </li>
+      <li class="social-item">
+        <a
+          class="social-link"
+          href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+          target="_blank"
+          >Linkedin</a
+        >
+      </li>
+      <li class="social-item">
+        <a
+          class="social-link"
+          href="https://github.com/Vyacheslav-Chop/project-persistent-portfolio"
+          target="_blank"
+          >GitHub</a
+        >
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="section">
+  <div class="container">
+    <h2 id="about-me" class="about-me-main-title">
+      About <span class="text-accent">me</span>
+    </h2>
+    <div class="about-me-picture-wrapper">
+      <picture class="item-wrapper">
+        <source
+          media="(min-widht: 1280px)"
+          srcset="/js_115_Vyacheslav-Chop/assets/about-me-desktop-_Jh2Mdz0.webp 1x, /js_115_Vyacheslav-Chop/assets/about-me-desktop@2x-Brmx8QoA.webp 2x"
+        />
+        <source
+          media="(min-widht: 768px)"
+          srcset="/js_115_Vyacheslav-Chop/assets/about-me-tablet-C8vLWFaE.webp 1x, /js_115_Vyacheslav-Chop/assets/about-me-tablet@2x-BWuwYIPz.webp 2x"
+        />
+        <source
+          media="(max-widht: 767px)"
+          srcset="/js_115_Vyacheslav-Chop/assets/about-me-mobile-WijTbG9y.webp 1x, /js_115_Vyacheslav-Chop/assets/about-me-mobile@2x-0DwkulHR.webp 2x"
+        />
+        <img
+          class="about-me-img"
+          src="/js_115_Vyacheslav-Chop/assets/about-me-desktop-_Jh2Mdz0.webp"
+          alt="A-men-with-a-leptop"
+        />
+      </picture>
+
+      <div class="item-wrapper about-me-bio-wrapper">
+        <h3 class="about-me-title">BIO</h3>
+        <p class="about-me-text first-about-me-text">
+          I'm Lloyd Jefferson, a talented programmer specializing in software
+          development. My expertise spans various programming languages and
+          technologies, and I am dedicated to continually enhancing my skills. I
+          thrive on seeking unconventional and creative solutions to problems,
+          leveraging a high level of analytical skills to effectively tackle
+          even the most challenging tasks.
+        </p>
+
+        <p class="about-me-text">
+          Adaptable to both independent and team-oriented work, I collaborate
+          seamlessly with colleagues, exchanging ideas and finding optimal
+          solutions. My professional maturity enables me to navigate challenges
+          and stressful situations with a calm demeanor, maintaining a
+          consistently high quality of work. Committed to self-improvement, I
+          actively engage in studying new technologies and practices to stay
+          current with the latest innovations in the field.
+        </p>
+      </div>
+    </div>
+
+    <div class="about-me-wrapper">
+      <div class="about-me-bg"></div>
+      <div class="item-wrapper about-me-education-wrapper">
+        <h3 class="about-me-title">EDUCATION</h3>
+        <ul class="about-me-list">
+          <li class="about-me-item">
+            <p class="about-me-desc">
+              2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
+              York
+            </p>
+          </li>
+          <li class="about-me-item">
+            <p class="about-me-desc">
+              2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+              School, New York
+            </p>
+          </li>
+          <li class="about-me-item">
+            <p class="about-me-desc">
+              2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="item-wrapper about-me-role-wrapper">
+        <h3 class="about-me-title">ROLE</h3>
+        <ul class="about-me-list role-about-me-list">
+          <li class="role-about-me-item">
+            <p class="about-me-desc">Frontend development</p>
+          </li>
+          <li class="role-about-me-item">
+            <p class="about-me-desc">HeadlessCMS, Wordpress</p>
+          </li>
+          <li class="role-about-me-item">
+            <p class="about-me-desc">Blender (enjoy)</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section">
+  <div class="container-skills">
+    <h2 class="tech-skills-hidden visually-hidden">Technical skills</h2>
+
+    <div class="marquee-1">
+      <div class="marquee__inner-1">
+        <p class="marquee-line">
+          <span class="dot"></span> HTML/CSS
+          <span class="dot"></span> JavaScript <span class="dot"></span> React
+          <span class="dot"></span> Node.js <span class="dot"></span> React
+          Native <span class="dot"></span> TypeScript
+          <span class="dot"></span> HTML/CSS
+          <span class="dot"></span> JavaScript <span class="dot"></span> React
+          <span class="dot"></span> Node.js <span class="dot"></span> React
+          Native <span class="dot"></span> TypeScript
+        </p>
+      </div>
+    </div>
+
+    <div class="marquee-2">
+      <div class="marquee__inner-2">
+        <p class="marquee-line text-accent">
+          <span class="dot"></span> HTML/CSS
+          <span class="dot"></span> JavaScript <span class="dot"></span> React
+          <span class="dot"></span> Node.js <span class="dot"></span> React
+          Native <span class="dot"></span> TypeScript
+          <span class="dot"></span> HTML/CSS
+          <span class="dot"></span> JavaScript <span class="dot"></span> React
+          <span class="dot"></span> Node.js <span class="dot"></span> React
+          Native <span class="dot"></span> TypeScript
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section" id="projects">
+  <div class="container container-projects">
+    <h2 class="projects-title">
+      My
+
+      <span class="text-accent">Projects</span>
+    </h2>
+
+    <ul class="projects-list"></ul>
+
+    <div class="projects-bnts-wrapper">
+      <button class="projects-load-more" type="button" data-load-more>
+        Load More
+      </button>
+      <button class="project-close-collection projects-load-more">
+        Close collection
+      </button>
+    </div>
+  </div>
+</section>
+
+      <section class="section">
+  <div class="container benefits-container">
+    <h2 class="benefits-title">
+      <span class="text-accent">Benefits</span> of working with me
+    </h2>
+    <div class="benefits-background-wrapper"></div>
+    <ul class="benefits-list">
+      <li class="benefits-item">
+        <div class="benefits-div-icon">
+          <svg class="benefits-icon" width="24" height="24">
+            <use href="/js_115_Vyacheslav-Chop/assets/icons-DnNAGzdN.svg#user-icon"></use>
+          </svg>
+        </div>
+        <h3 class="benefits-heading">Expertise</h3>
+        <p class="benefits-text">
+          With extensive experience in development, I have a deep understanding
+          of programming and website development.
+        </p>
+      </li>
+      <li class="benefits-item">
+        <div class="benefits-div-icon">
+          <svg class="benefits-icon" width="24" height="24">
+            <use href="/js_115_Vyacheslav-Chop/assets/icons-DnNAGzdN.svg#message-icon"></use>
+          </svg>
+        </div>
+        <h3 class="benefits-heading">Communication</h3>
+        <p class="benefits-text">
+          Understanding your needs and wants is my priority and I am always
+          available for discussions and open to corrections.
+        </p>
+      </li>
+      <li class="benefits-item">
+        <div class="benefits-div-icon">
+          <svg class="benefits-icon" width="24" height="24">
+            <use href="/js_115_Vyacheslav-Chop/assets/icons-DnNAGzdN.svg#brush-icon"></use>
+          </svg>
+        </div>
+        <h3 class="benefits-heading">Art</h3>
+        <p class="benefits-text">
+          Thanks to my creative nature, I am ready to accept challenges and help
+          you bring your ideas to life.
+        </p>
+      </li>
+      <li class="benefits-item">
+        <div class="benefits-div-icon">
+          <svg class="benefits-icon" width="24" height="24">
+            <use href="/js_115_Vyacheslav-Chop/assets/icons-DnNAGzdN.svg#hourglass-icon"></use>
+          </svg>
+        </div>
+        <h3 class="benefits-heading">Urgent execution</h3>
+        <p class="benefits-text">
+          I understand how important time is to you. Ready to work quickly and
+          efficiently, without reducing the quality of work.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="section">
+  <div class="container faq-container">
+    <h2 class="faq-title">
+      Frequently Asked <span class="text-accent">Question</span>
+    </h2>
+    <div class="faq-background">
+      <img src="/js_115_Vyacheslav-Chop/assets/decor-green-desktop-CRx3hqV7.webp" alt="Green decor" />
+    </div>
+    <div class="faq-accordion-container">
+      <ul class="faq-list accordion-container">
+        <li class="faq-item ac">
+          <h3 class="faq-question-arrow-wrapper ac-header">
+            <button
+              type="button"
+              class="faq-question ac-trigger"
+              aria-label="Open FAQ answer"
+            >
+              What programming languages are most often used in your project?
+              <svg class="faq-arrow-btn-icon" width="24" height="24">
+                <use href="/js_115_Vyacheslav-Chop/assets/icons-DnNAGzdN.svg#icon-arrow-down"></use>
+              </svg>
+            </button>
+          </h3>
+
+          <div class="faq-accordion-answer ac-panel">
+            <p class="faq-answer">
+              In the field of web development, there are various technologies
+              and programming languages. Typically, this includes a combination
+              of frontend (client side) and backend (server side) languages.
+            </p>
+          </div>
+        </li>
+        <li class="faq-item ac">
+          <h3 class="faq-question-arrow-wrapper ac-header">
+            <button
+              class="faq-question ac-trigger"
+              aria-label="Open FAQ answer"
+              type="button"
+            >
+              What are the deadlines for the project?
+              <svg class="faq-arrow-btn-icon" width="24" height="24">
+                <use href="/js_115_Vyacheslav-Chop/assets/icons-DnNAGzdN.svg#icon-arrow-down"></use>
+              </svg>
+            </button>
+          </h3>
+
+          <div class="faq-accordion-answer ac-panel">
+            <p class="faq-answer">
+              The terms of project implementation depend to a large extent on a
+              number of factors, such as the scope of the project, its
+              complexity, and the availability of resources. Determining exact
+              deadlines is a difficult task, and it usually occurs during the
+              planning phase of the project.
+            </p>
+          </div>
+        </li>
+        <li class="faq-item ac">
+          <h3 class="faq-question-arrow-wrapper ac-header">
+            <button
+              class="faq-question ac-trigger"
+              aria-label="Open FAQ answer"
+              type="button"
+            >
+              What payment methods do you accept?
+              <svg class="faq-arrow-btn-icon" width="24" height="24">
+                <use href="/js_115_Vyacheslav-Chop/assets/icons-DnNAGzdN.svg#icon-arrow-down"></use>
+              </svg>
+            </button>
+          </h3>
+
+          <div class="faq-accordion-answer ac-panel">
+            <p class="faq-answer">
+              Payment through credit and debit cards such as Visa, MasterCard,
+              specialized electronic payment systems such as PayPal, as well as
+              payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+            </p>
+          </div>
+        </li>
+        <li class="faq-item ac">
+          <h3 class="faq-question-arrow-wrapper ac-header">
+            <button
+              class="faq-question ac-trigger"
+              aria-label="Open FAQ answer"
+              type="button"
+            >
+              How can I contact you?
+              <svg class="faq-arrow-btn-icon" width="24" height="24">
+                <use href="/js_115_Vyacheslav-Chop/assets/icons-DnNAGzdN.svg#icon-arrow-down"></use>
+              </svg>
+            </button>
+          </h3>
+
+          <div class="faq-accordion-answer ac-panel">
+            <p class="faq-answer">
+              In the field of web development, there are various technologies
+              and programming languages. Typically, this includes a combination
+              of frontend (client side) and backend (server side) languages.
+            </p>
+          </div>
+        </li>
+        <li class="faq-item ac">
+          <h3 class="faq-question-arrow-wrapper ac-header">
+            <button
+              class="faq-question ac-trigger"
+              aria-label="Open FAQ answer"
+              type="button"
+            >
+              Do you provide advice or support?
+              <svg class="faq-arrow-btn-icon" width="24" height="24">
+                <use href="/js_115_Vyacheslav-Chop/assets/icons-DnNAGzdN.svg#icon-arrow-down"></use>
+              </svg>
+            </button>
+          </h3>
+
+          <div class="faq-accordion-answer ac-panel">
+            <p class="faq-answer">
+              The terms of project implementation depend to a large extent on a
+              number of factors, such as the scope of the project, its
+              complexity, and the availability of resources. Determining exact
+              deadlines is a difficult task, and it usually occurs during the
+              planning phase of the project.
+            </p>
+          </div>
+        </li>
+        <li class="faq-item ac">
+          <h3 class="faq-question-arrow-wrapper ac-header">
+            <button
+              class="faq-question ac-trigger"
+              aria-label="Open FAQ answer"
+              type="button"
+            >
+              What does the process of developing a software product look like
+              from idea to implementation?
+              <svg class="faq-arrow-btn-icon" width="24" height="24">
+                <use href="/js_115_Vyacheslav-Chop/assets/icons-DnNAGzdN.svg#icon-arrow-down"></use>
+              </svg>
+            </button>
+          </h3>
+
+          <div class="faq-accordion-answer ac-panel">
+            <p class="faq-answer">
+              Payment through credit and debit cards such as Visa, MasterCard,
+              specialized electronic payment systems such as PayPal, as well as
+              payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="section">
+  <div class="container container-review">
+    <h2 class="review-title">REVIEWS</h2>
+    <div class="swiper reviews-swiper">
+      <ul class="swiper-wrapper" id="reviews-list"></ul>
+
+      <div class="swiper-nav">
+        <div
+          class="swiper-button-prev"
+          tabindex="0"
+          role="button"
+          aria-label="Previous slide"
+        >
+          <svg class="button-icon-prev" width="40" height="40">
+            <use href="/js_115_Vyacheslav-Chop/assets/icons-DnNAGzdN.svg#icon-arrow-right2"></use>
+          </svg>
+        </div>
+        <div
+          class="swiper-button-next"
+          tabindex="0"
+          role="button"
+          aria-label="Next slide"
+        >
+          <svg class="button-icon" width="40" height="40">
+            <use href="/js_115_Vyacheslav-Chop/assets/icons-DnNAGzdN.svg#icon-arrow-right2"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section">
+  <div class="container work-together-container is-close">
+    <div class="work-together-bg"></div>
+    <h2 class="work-together-title" id="work-together">
+      let's <span class="text-accent">work together</span>
+    </h2>
+    <div class="work-together-contacts-box">
+      <div class="adress-containet work-together-contacts-item">
+        <p class="work-together-text">
+          Contact me to transform your ideas into exceptional solutions.
+        </p>
+
+        <ul class="work-together-contacts-list">
+          <li class="work-together-contacts-item">
+            <address class="work-together-contacts">
+              <div class="contact-link-container">
+                <svg class="contacts-icon" width="24" height="24">
+                  <use href="/js_115_Vyacheslav-Chop/assets/icons-DnNAGzdN.svg#icon"></use>
+                </svg>
+                <a class="contact-link" href="tel:+380904567890"
+                  >+38 090 456 78 90</a
+                >
+              </div>
+            </address>
+          </li>
+          <li class="work-together-contacts-item">
+            <address class="work-together-contacts">
+              <div class="contact-link-container">
+                <svg class="contacts-icon" width="24" height="24">
+                  <use href="/js_115_Vyacheslav-Chop/assets/icons-DnNAGzdN.svg#icon-1"></use>
+                </svg>
+                <a class="contact-link" href="mailto:lloydjefferson@gmail.com"
+                  >lloydjefferson@gmail.com</a
+                >
+              </div>
+            </address>
+          </li>
+          <li class="work-together-contacts-item">
+            <address class="work-together-contacts">
+              <div class="contact-link-container">
+                <svg class="contacts-icon" width="24" height="24">
+                  <use href="/js_115_Vyacheslav-Chop/assets/icons-DnNAGzdN.svg#icon-2"></use>
+                </svg>
+                <a
+                  href="https://www.google.com/maps/place/New+York,+USA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-link"
+                >
+                  USA, New York
+                </a>
+              </div>
+            </address>
+          </li>
+        </ul>
+      </div>
+      <form class="work-together-form work-together-contacts-item">
+        <div class="work-together-input-container">
+          <input
+            class="work-together-input"
+            type="email"
+            name="user-email"
+            id="user-email"
+            placeholder="Your email*"
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            required
+          />
+          <span class="work-together-input-wrapper hidden">
+            <svg class="work-togethe-input-icon" width="16" height="16">
+              <use href="/js_115_Vyacheslav-Chop/assets/icons-DnNAGzdN.svg#ep_success-filled"></use>
+            </svg>
+          </span>
+        </div>
+        <p class="email-error hidden">Invalid name, try again</p>
+        <textarea
+          class="work-together-textarea"
+          name="user-message"
+          id="user-message"
+          rows="5"
+          placeholder="Message"
+          required
+        ></textarea>
+        <button class="work-send-btn" type="submit">SEND MESSAGE</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div class="work-together-backdrop is-close">
+  <div class="work-together-modal">
+    <button class="work-modal-close-btn" type="button">
+      <svg class="work-modal-close-img" width="24" height="24">
+        <use href="/js_115_Vyacheslav-Chop/assets/icons-DnNAGzdN.svg#close-answer"></use>
+      </svg>
+    </button>
+    <div class="work-modal-iner"></div>
+  </div>
+</div>
+
+    </main>
+
+    <footer class="sectio-footer">
+  <div class="container footer-container">
+    <div class="footer-social-wrapper">
+      <a class="site-logo footer-logo" href="./index.html">
+        <p class="text-logo footer-text-logo">
+          Lloyd<span class="text-accent">Jefferson.</span>
+        </p>
+      </a>
+      <ul class="social-list">
+        <li class="social-item">
+          <a
+            class="social-link"
+            href="https://www.instagram.com/goitclub/"
+            target="_blank"
+            >Instagram</a
+          >
+        </li>
+        <li class="social-item">
+          <a
+            class="social-link"
+            href="https://www.facebook.com/goITclub/"
+            target="_blank"
+            >Facebook</a
+          >
+        </li>
+        <li class="social-item">
+          <a
+            class="social-link"
+            href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+            target="_blank"
+            >Linkedin</a
+          >
+        </li>
+        <li class="social-item">
+          <a
+            class="social-link"
+            href="https://github.com/Vyacheslav-Chop/project-persistent-portfolio"
+            target="_blank"
+            >GitHub</a
+          >
+        </li>
+      </ul>
+    </div>
+    <p class="copy-text">
+      &copy; Copyright 2024. Made by LloydJefferson
+    </p>
+  </div>
+</footer>
+
+    <!-- scroll to the top -->
+    <div class="scroll-to-top">
+      <svg class="go-top" width="40" height="40">
+        <use href="/js_115_Vyacheslav-Chop/assets/icons-DnNAGzdN.svg#chevron-up"></use>
+      </svg>
+    </div>
+  </body>
+</html>
